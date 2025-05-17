@@ -3,7 +3,7 @@ from collections import defaultdict
 
 class ObjectCounter:
     def __init__(self):
-        # Tracks total counts per class across all frames
+        # tracks total counts per frame
         self.total_counts = defaultdict(int)
 
     def update(self, detections, model_names, selected_classes=None):
